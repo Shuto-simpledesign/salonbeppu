@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:after, *:before {
   box-sizing: border-box; }
 
@@ -94,15 +95,65 @@ html {
 
 body {
   font-size: 12px;
-  line-height: 1.67; }
+  line-height: 1.67;
+  width: 1300px;
+  margin: 0 auto; }
 
 header {
   width: 100%;
   height: 60px;
-  background-color: red; }
+  z-index: 10;
+  position: absolute; }
+  header .salon-wrap {
+    display: flex;
+    flex-flow: row;
+    padding-top: 70px;
+    padding-left: 60px; }
+    header .salon-wrap .salon-name {
+      font-size: 40px;
+      font-family: Roboto Mono for Powerline; }
+    header .salon-wrap nav li {
+      font-size: 18px;
+      font-family: Roboto Mono for Powerline;
+      padding-left: 40px;
+      float: left;
+      margin-top: 5%; }
+      header .salon-wrap nav li:nth-child(n+2) {
+        color: #707070; }
 
-.h1 {
-  font-size: 77px;
-  font-family: italic; }
+#top {
+  height: 800px; }
+
+.top-wrap {
+  display: flex;
+  width: 100%; }
+  .top-wrap .top-item {
+    background-color: white;
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    margin: auto 0; }
+    .top-wrap .top-item .top-title {
+      font-family: ヒラギノ明朝 Pro;
+      font-size: 37px;
+      line-height: 38px;
+      margin-bottom: 50px; }
+    .top-wrap .top-item .top-catch {
+      font-size: 30px;
+      font-family: Zapfino;
+      line-height: 128px;
+      letter-spacing: 10px; }
+  .top-wrap .top-img img {
+    width: 700px;
+    height: 800px;
+    background-size: cover; }
+
+#concept {
+  height: 900px;
+  background: linear-gradient(180deg, #A193861F 50%, #A1938689 50%); }
+
+#access {
+  width: 1282px;
+  height: 757px; }
 
 /*# sourceMappingURL=main.css.map */
