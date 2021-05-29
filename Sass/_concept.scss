@@ -1,4 +1,67 @@
 #concept {
-    height: 900px;
+    height: 1000px;
     background:linear-gradient(180deg,#A193861F 50%, #A1938689 50%)
+}
+
+
+.concept-wrap {
+        padding-top: 200px;
+
+    .concept-title {
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-family: Roboto regular;
+            letter-spacing: 5.4px;
+            color: #707070;
+
+            &:after {
+                display:inline-block;    
+                border-top: 1px solid #707070;
+                width:100px;
+                margin-left:10px;
+                margin-bottom: 5px;
+                content:"";
+            }
+            }
+
+    .concept-img {
+        height: 410px;
+        margin: 0 auto;
+        display: flex;
+
+        .andrew {
+        width: 670px;
+        }
+        .joel {
+            width: 380px;
+            margin-left: 10px;
+        }
+    }
+    .co-message {
+        width: 1000px;
+        height: 130px;
+        color: white;
+        display: flex;
+        margin:0 auto;
+
+        h1 {
+            width: 100%;
+            margin-top:90px;
+            text-align: center;
+            letter-spacing: 16px;
+            font-size: 48px;
+            font-family: ヒラギノ明朝 Pro;
+        }
+        p {
+            width: 100%;
+            font-size: 18px;
+            font-family: ヒラギノ角ゴ Pro;
+            text-align: left;
+            margin-top: 70px;
+            margin-left: 60px;
+            letter-spacing: 1.6px;
+
+        }
+        }
+
 }

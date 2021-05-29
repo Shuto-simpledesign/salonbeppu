@@ -98,6 +98,9 @@ body {
   line-height: 1.67;
   width: 1300px;
   margin: 0 auto; }
+  body .inner {
+    width: 1060px;
+    margin: 0 auto; }
 
 header {
   width: 100%;
@@ -115,7 +118,7 @@ header {
     header .salon-wrap nav li {
       font-size: 18px;
       font-family: Roboto Mono for Powerline;
-      padding-left: 40px;
+      padding-left: 35px;
       float: left;
       margin-top: 5%; }
       header .salon-wrap nav li:nth-child(n+2) {
@@ -149,8 +152,54 @@ header {
     background-size: cover; }
 
 #concept {
-  height: 900px;
+  height: 1000px;
   background: linear-gradient(180deg, #A193861F 50%, #A1938689 50%); }
+
+.concept-wrap {
+  padding-top: 200px; }
+  .concept-wrap .concept-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Roboto regular;
+    letter-spacing: 5.4px;
+    color: #707070; }
+    .concept-wrap .concept-title:after {
+      display: inline-block;
+      border-top: 1px solid #707070;
+      width: 100px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+      content: ""; }
+  .concept-wrap .concept-img {
+    height: 410px;
+    margin: 0 auto;
+    display: flex; }
+    .concept-wrap .concept-img .andrew {
+      width: 670px; }
+    .concept-wrap .concept-img .joel {
+      width: 380px;
+      margin-left: 10px; }
+  .concept-wrap .co-message {
+    width: 1000px;
+    height: 130px;
+    color: white;
+    display: flex;
+    margin: 0 auto; }
+    .concept-wrap .co-message h1 {
+      width: 100%;
+      margin-top: 90px;
+      text-align: center;
+      letter-spacing: 16px;
+      font-size: 48px;
+      font-family: ヒラギノ明朝 Pro; }
+    .concept-wrap .co-message p {
+      width: 100%;
+      font-size: 18px;
+      font-family: ヒラギノ角ゴ Pro;
+      text-align: left;
+      margin-top: 70px;
+      margin-left: 60px;
+      letter-spacing: 1.6px; }
 
 #access {
   width: 1282px;
