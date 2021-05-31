@@ -9,7 +9,7 @@
 
     .concept-title {
             margin-bottom: 20px;
-            font-size: 18px;
+            font-size: 30px;
             font-family: Roboto regular;
             letter-spacing: 5.4px;
             color: #707070;
@@ -17,9 +17,9 @@
             &:after {
                 display:inline-block;    
                 border-top: 1px solid #707070;
-                width:100px;
-                margin-left:10px;
-                margin-bottom: 5px;
+                width:150px;
+                margin-left:20px;
+                margin-bottom: 10px;
                 content:"";
             }
             }
@@ -37,6 +37,7 @@
             margin-left: 10px;
         }
     }
+
     .co-message {
         width: 1000px;
         height: 130px;

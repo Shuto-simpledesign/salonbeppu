@@ -1,15 +1,62 @@
+@mixin nav_hover {
+    a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+}
+
+@mixin sp {
+    @media (max-width:380px){
+        @content;
+    }
+}
+
 html{
     font-size: 62.5%; //10px=1remになる
+    scroll-behavior: smooth;
 }
 
 body{
-    font-size:12px;
+    font-size:16px;
     line-height:1.67;
     width: 1300px;
     margin: 0 auto;
 
+      .concept-title {
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-family: Roboto regular;
+            letter-spacing: 5.4px;
+            color: #707070;
+
+            &:after {
+                display:inline-block;    
+                border-top: 1px solid #707070;
+                width:150px;
+                margin-left:20px;
+                margin-bottom: 10px;
+                content:"";
+            }
+            }
     .inner {
-        width: 1060px;
+        width: 80%;
         margin: 0 auto;
     }
 

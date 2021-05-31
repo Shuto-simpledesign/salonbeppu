@@ -1,0 +1,56 @@
+#menu {
+    height: 1000px;
+    color: black;
+    background-color: white;
+    
+    .inner {
+        padding-top: 250px;
+    }
+
+    .menu-wrap {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            padding-bottom:20px;
+        }
+
+        .menu-box {
+            display: block;
+            width: 270px;
+            height: 540px;
+            font-family: Roboto Mono for Powerline;
+            text-align: center;
+            .menu-img {
+                height: 300px;
+                padding-bottom: 35px;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .name {
+                font-size: 30px;
+                line-height: 30px;
+                padding-bottom: 35px;
+                            }
+            .txt {
+                  width: 90%;
+                  margin: 0 auto;
+                  margin-bottom: 35px;
+            }
+            .price {
+                text-align: right;
+            }
+            
+        }
+    }
+
+
+
+
+
+}

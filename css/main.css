@@ -91,22 +91,37 @@ input, select {
 
 /*# sourceMappingURL=reset.css.map */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.67;
   width: 1300px;
   margin: 0 auto; }
+  body .concept-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: Roboto regular;
+    letter-spacing: 5.4px;
+    color: #707070; }
+    body .concept-title:after {
+      display: inline-block;
+      border-top: 1px solid #707070;
+      width: 150px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      content: ""; }
   body .inner {
-    width: 1060px;
+    width: 80%;
     margin: 0 auto; }
 
 header {
   width: 100%;
   height: 60px;
   z-index: 10;
-  position: absolute; }
+  position: absolute;
+  scroll-behavior: smooth; }
   header .salon-wrap {
     display: flex;
     flex-flow: row;
@@ -123,6 +138,24 @@ header {
       margin-top: 5%; }
       header .salon-wrap nav li:nth-child(n+2) {
         color: #707070; }
+  header .salon-nav a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none; }
+  header .salon-nav a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s; }
+  header .salon-nav a:hover::after {
+    transform-origin: left top;
+    transform: scale(1, 1); }
 
 #top {
   height: 800px; }
@@ -159,16 +192,16 @@ header {
   padding-top: 200px; }
   .concept-wrap .concept-title {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 30px;
     font-family: Roboto regular;
     letter-spacing: 5.4px;
     color: #707070; }
     .concept-wrap .concept-title:after {
       display: inline-block;
       border-top: 1px solid #707070;
-      width: 100px;
-      margin-left: 10px;
-      margin-bottom: 5px;
+      width: 150px;
+      margin-left: 20px;
+      margin-bottom: 10px;
       content: ""; }
   .concept-wrap .concept-img {
     height: 410px;
@@ -201,8 +234,91 @@ header {
       margin-left: 60px;
       letter-spacing: 1.6px; }
 
+#menu {
+  height: 1000px;
+  color: black;
+  background-color: white; }
+  #menu .inner {
+    padding-top: 250px; }
+  #menu .menu-wrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    #menu .menu-wrap h2 {
+      padding-bottom: 20px; }
+    #menu .menu-wrap .menu-box {
+      display: block;
+      width: 270px;
+      height: 540px;
+      font-family: Roboto Mono for Powerline;
+      text-align: center; }
+      #menu .menu-wrap .menu-box .menu-img {
+        height: 300px;
+        padding-bottom: 35px; }
+        #menu .menu-wrap .menu-box .menu-img img {
+          width: 100%;
+          height: 100%; }
+      #menu .menu-wrap .menu-box .name {
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 35px; }
+      #menu .menu-wrap .menu-box .txt {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 35px; }
+      #menu .menu-wrap .menu-box .price {
+        text-align: right; }
+
 #access {
-  width: 1282px;
-  height: 757px; }
+  height: 760px;
+  background-color: #A193861F; }
+  #access .a-title {
+    padding-top: 200px; }
+  #access .access-wrap {
+    display: flex;
+    background-color: #D0C5BA;
+    width: 100%;
+    height: 400px; }
+    #access .access-wrap .a-box {
+      width: 100%;
+      text-align: center;
+      margin: auto 0;
+      font-family: Roboto Mono for Powerline; }
+      #access .access-wrap .a-box .p-box {
+        width: 60%;
+        margin: auto;
+        text-align: left; }
+        #access .access-wrap .a-box .p-box h1 {
+          font-size: 24px;
+          font-weight: bold;
+          color: #00000038;
+          letter-spacing: 2.4px;
+          margin-bottom: 20px; }
+        #access .access-wrap .a-box .p-box p {
+          color: white;
+          padding-bottom: 10px;
+          letter-spacing: 1.6px;
+          font-weight: normal;
+          font-size: 20px; }
+
+footer {
+  height: 400px;
+  position: relative; }
+  footer .border {
+    border-bottom: 2px solid #D0C5BA;
+    width: 100%;
+    padding-top: 200px; }
+  footer .f-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 30px; }
+    footer .f-box .salon-name {
+      font-size: 40px;
+      font-family: Roboto Mono for Powerline;
+      color: #707070; }
+    footer .f-box p {
+      margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

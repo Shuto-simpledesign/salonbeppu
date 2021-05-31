@@ -3,7 +3,9 @@ header {
     height: 60px;
     z-index: 10;
     position: absolute;
-    
+    scroll-behavior:smooth;
+
+
 
     .salon-wrap {
         display: flex;
@@ -30,4 +32,9 @@ header {
             }
         }
     }
+    .salon-nav {
+        @include nav_hover;
+    }
+
+
 }

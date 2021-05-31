@@ -1,0 +1,26 @@
+footer {
+    height: 400px;
+    position: relative;
+
+    .border {
+        border-bottom: 2px solid #D0C5BA;
+        width: 100%;
+        padding-top: 200px;
+    }
+    .f-box {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 30px;
+         
+         .salon-name {
+            font-size: 40px;
+            font-family: Roboto Mono for Powerline;
+            color: #707070;
+         }
+        p {
+            margin-top: 20px;
+        }
+    }
+   
+}

@@ -1,4 +1,48 @@
 #access {
-    width: 1282px;
-    height: 757px;
+    height: 760px;
+    background-color: #A193861F;
+
+    .a-title {
+        padding-top: 200px;
+    }
+
+    .access-wrap {
+        display: flex;
+        background-color: #D0C5BA;
+        width: 100%;
+        height: 400px;
+
+        .a-box {
+            width: 100%;
+            text-align: center;
+            margin: auto 0;
+            font-family: Roboto Mono for Powerline,;
+           
+            .p-box {
+                width: 60%;
+                margin: auto;
+                text-align: left;
+                              
+                h1 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #00000038;
+                letter-spacing: 2.4px;
+                margin-bottom: 20px;
+                }
+            
+                p {
+                    color: white;
+                    padding-bottom: 10px;
+                    letter-spacing: 1.6px;
+                    font-weight: normal;
+                    font-size: 20px;
+
+                }
+            }
+            
+        }
+    }
+
+
 }
