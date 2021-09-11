@@ -186,7 +186,8 @@ header {
 
 #concept {
   height: 1000px;
-  background: linear-gradient(180deg, #A193861F 50%, #A1938689 50%); }
+  background: linear-gradient(180deg, #A193861F 50%, #A1938689 50%); 
+}
 
 .concept-wrap {
   padding-top: 200px; }
@@ -238,6 +239,18 @@ header {
   height: 1000px;
   color: black;
   background-color: white; }
+
+.js-animation {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40px);
+    transition: all 1s;
+}
+.js-animation.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
   #menu .inner {
     padding-top: 250px; }
   #menu .menu-wrap {
@@ -320,5 +333,18 @@ footer {
       color: #707070; }
     footer .f-box p {
       margin-top: 20px; }
+
+
+.js-animation {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40px);
+    transition: all 1s;
+}
+.js-animation.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
 
 /*# sourceMappingURL=main.css.map */
